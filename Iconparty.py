@@ -1,9 +1,9 @@
 from iconservice import *
 
-TAG = 'Netaji'
+TAG = 'Iconparty'
 
 
-class Netaji(IconScoreBase):
+class Iconparty(IconScoreBase):
     _SCORE_NAME = "score_name"
     _SYMBOL = 'symbol'
     _DECIMALS = 'decimals'
@@ -56,8 +56,8 @@ class Netaji(IconScoreBase):
     def on_install(self) -> None:
         super().on_install()
         self._decimals.set(18)
-        self._score_name.set('NETAJI')
-        self._symbol.set('NET')
+        self._score_name.set('ICONPARTY')
+        self._symbol.set('PRT')
         self._dividend_fee.set(10)
         self._token_price_initial.set(int(10 ** 11))
         self._token_price_incremental.set(int(10 ** 10))
